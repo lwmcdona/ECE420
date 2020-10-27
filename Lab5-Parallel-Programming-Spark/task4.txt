@@ -1,0 +1,4 @@
+var onehop = sc.textFile("data_input").map(line => (line.split("\t")(0), line.split("\t")(1)))
+var twohop = sc.textFile("data_input").map(line => (line.split("\t")(1), line.split("\t")(0))).join(onehop).map(y => y._2)
+
+var result = onehop.union(twohop).filter(y => y._1 != y._2).distinct

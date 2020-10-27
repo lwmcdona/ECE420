@@ -1,0 +1,17 @@
+#Read me for ECE 420 Lab2
+
+Authors:
+* Luke Slevinsky
+* Logan McDonald
+
+# Notes
+  * There are a few different implementations of this idea, namely server.c, main1.c, main2.c, and main3.c that implement
+      multiple read-write locks, a single read-write lock, multiple mutex and a single mutex. The best implementation
+      is server.c
+
+# Steps to Run
+  1. Unzip the downloaded folder
+  2. Use the MakeFile to compile the necessary files (`make` and `make client` if you are testing the client program)
+  3. Run the server by running `./main <number_of_strings> <server_ip> <server_port>`
+  3. Test the server by running the client executable `./client <number_of_strings> <server_ip> <server_port> or
+      using the shell script `./test.sh <number_of_strings> <server_ip> <server_port>`

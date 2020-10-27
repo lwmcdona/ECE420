@@ -1,0 +1,4 @@
+var one = sc.textFile("data_input").map(line => (line.split("\t")(1), line.split("\t")(0)))
+var two = sc.textFile("data_input").map(line => (line.split("\t")(0), line.split("\t")(1)))
+
+var result = one.union(two).groupByKey.map(x => (x._1, x._2.toList.distinct))

@@ -1,0 +1,15 @@
+# Read me for ECE 420 Lab4
+
+Authors:
+* Luke Slevinsky
+* Logan McDonald
+
+# Notes
+  * This submission contains a few different solutions from different steps as we optimized. They can be found in main1-main3. The most heavily optimized version of the
+      code can be found in main.c
+
+# Steps to Run
+  1. Unzip the downloaded folder
+  2. Use the MakeFile to compile the necessary files (`make` to compile the main implementation of one of main1. main2. main3 etc. to use other implementations)
+  3. Generate a node set to solve with `make datatrim` and then `./datatrim`
+  4. Run the Page Rank algorithm by running `mpirun  -np <num_threads> ./main`
